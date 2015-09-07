@@ -53,7 +53,7 @@ sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
 sudo npm install -g bower grunt-cli
-git clone https://github.com/meanjs/mean.git /opt/mean
+sudo git clone https://github.com/meanjs/mean.git /opt/mean
 cd /opt/mean
 sudo npm install
 cd ~
@@ -73,6 +73,7 @@ cd ~
 ##Install Chrome... I tried to avoid it but still could not
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt-get install -f
 
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 curl -L git.io/omf | sh
