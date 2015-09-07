@@ -75,8 +75,13 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -f
 
+##Oh-My-ZSH!
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+##Oh-My-Fish
 curl -L github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | sh
+##Bash-It!
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+sh ~/.bash_it/install.sh
 
 ##Install Our Web Testing Driver PhantomJS
 sudo npm install phantomjs
