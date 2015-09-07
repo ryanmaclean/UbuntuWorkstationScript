@@ -72,7 +72,7 @@ cd ~
 
 ##Install Chrome... I tried to avoid it but still could not
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg –I google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 curl -L git.io/omf | sh
