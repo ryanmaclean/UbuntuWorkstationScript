@@ -23,7 +23,13 @@ EOF
 sudo apt-get update
 
 ##Install Opinionated Stuff Here
-sudo apt-get -y --force-yes install openssh-server clusterhq-flocker-cli indicator-multiload apt-transport-https software-properties-common vim vagrant virtualbox chef puppet ansible tmux mussh multitail mc iptraf netcat links mutt zsh fish jmeter iperf iotop htop traceroute nmap docker ruby python python-pip git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev git build-essential openssl pkg-config nodejs npm postgresql-common postgresql-9.3 libpq-dev mysql-server mysql-client libmysqlclient-dev mysql-workbench libsqlite3-dev sqlite3 mongodb-org steam spotify-client software-properties-common sublime-text-installer scudcloud duck hipchat gnome-tweak-tool
+sudo apt-get -y --force-yes install openssh-server clusterhq-flocker-cli indicator-multiload apt-transport-https\
+software-properties-common vim vagrant virtualbox chef puppet ansible tmux mussh multitail mc iptraf netcat links\
+mutt zsh fish jmeter iperf iotop htop traceroute nmap docker.io ruby python python-pip git-core curl zlib1g-dev\
+build-essential libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev\
+python-software-properties libffi-dev git build-essential openssl pkg-config nodejs npm postgresql-common postgresql-9.3\
+libpq-dev mysql-server mysql-client libmysqlclient-dev mysql-workbench libsqlite3-dev sqlite3 mongodb-org steam\
+spotify-client software-properties-common sublime-text-installer scudcloud duck hipchat gnome-tweak-tool
 
 ##Config SSH
 sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.factory-defaults
