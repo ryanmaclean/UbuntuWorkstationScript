@@ -23,15 +23,15 @@ EOF
 sudo apt-get update
 
 ##Install Opinionated Stuff Here
-sudo apt-get -y --force-yes install openssh-server clusterhq-flocker-cli indicator-multiload apt-transport-https \
+sudo apt-get -y --force-yes install mtr clusterhq-flocker-cli indicator-multiload apt-transport-https \
 software-properties-common vim vagrant virtualbox chef puppet ansible tmux mussh multitail mc iptraf netcat links \
 mutt zsh fish jmeter iperf iotop htop traceroute nmap docker.io ruby python python-pip git-core curl zlib1g-dev \
 build-essential libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev \
 python-software-properties libffi-dev git build-essential openssl pkg-config nodejs npm postgresql-common postgresql-9.3 \
 libpq-dev mysql-client libmysqlclient-dev mysql-workbench libsqlite3-dev sqlite3 mongodb-org steam \
-spotify-client software-properties-common sublime-text-installer scudcloud duck hipchat gnome-tweak-tool
+spotify-client software-properties-common sublime-text-installer scudcloud duck hipchat 
 
-#mysql-server
+#mysql-server gnome-tweak-tool
 
 ##Config SSH
 sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.factory-defaults
@@ -42,19 +42,19 @@ sudo restart ssh
 sudo pip install awscli
 
 ##Get Your Ruby On
-git clone git://github.com/sstephenson/rbenv.git .rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-exec $SHELL
-git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
-exec $SHELL
-git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
-rbenv install 2.2.2
-rbenv global 2.2.2
-echo "gem: --no-ri --no-rdoc" > ~/.gemrc
-gem install bundler rails:4.2.1
-rbenv rehash
+#git clone git://github.com/sstephenson/rbenv.git .rbenv
+#echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+#echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+#exec $SHELL
+#git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+#echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+#exec $SHELL
+#git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+#rbenv install 2.2.2
+#rbenv global 2.2.2
+#echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+#gem install bundler rails:4.2.1
+#rbenv rehash
 
 ##Make it MEAN
 sudo npm cache clean -f
@@ -98,4 +98,4 @@ sudo npm install phantomjs
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ##Start the Tweak Tool - Set This Puppy to "2"
-gnome-tweak-tool &
+#gnome-tweak-tool &
