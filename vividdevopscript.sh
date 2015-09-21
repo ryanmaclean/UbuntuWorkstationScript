@@ -78,16 +78,17 @@ mkdir packer
 cd packer
 wget https://dl.bintray.com/mitchellh/packer/packer_0.8.6_linux_amd64.zip
 unzip packer_0.8.6_linux_amd64.zip
+cd~
 
-##Spice Up Steam
-cd ~/.local/share/Steam/skins/
-git clone https://github.com/DirtDiglett/Pressure-for-Steam.git
-cd ~
+##Spice Up Steam - FIX, NEEDS A STEAM START FIRST
+#cd ~/.local/share/Steam/skins/
+#git clone https://github.com/DirtDiglett/Pressure-for-Steam.git
+#cd ~
 
 ##Install Chrome... I tried to avoid it but still could not
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-sudo apt-get install -f
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&\
+sudo dpkg -i google-chrome-stable_current_amd64.deb &&\
+sudo apt-get install -f -y 
 
 ##Oh-My-ZSH!
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
@@ -99,6 +100,15 @@ sh ~/.bash_it/install.sh
 
 ##Install Vundle, the Vim Package Manager
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+##Install Lastpass
+sudo apt-get install -y openssl libcurl4-openssl-dev libxml2 libssl-dev libxml2-dev pinentry-curses xclip
+git clone https://github.com/lastpass/lastpass-cli.git
+cd lastpass-cli
+make && make install
+cd ~ &&\
+wget https://lastpass.com/download/cdn/lp_no_bin.xpi &&\
+sudo mv lp_no_bin.xpi  ~/.mozilla/extensions/ 
 
 ##Start the Tweak Tool - Set This Puppy to "2"
 #gnome-tweak-tool &
