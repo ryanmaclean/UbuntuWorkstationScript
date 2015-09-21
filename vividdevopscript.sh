@@ -69,7 +69,9 @@ sudo git clone https://github.com/meanjs/mean.git /opt/mean
 cd /opt/mean
 sudo npm install
 cd ~
-sudo npm install -g yo
+
+##Install Yeoman and PhantomJS
+sudo npm install -g yo phantomjs
 
 ##Install Packer 
 mkdir packer
@@ -94,9 +96,6 @@ curl -L github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | sh
 ##Bash-It!
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 sh ~/.bash_it/install.sh
-
-##Install Our Web Testing Driver PhantomJS
-sudo npm install phantomjs
 
 ##Install Vundle, the Vim Package Manager
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
