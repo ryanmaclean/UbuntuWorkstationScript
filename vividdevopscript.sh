@@ -110,5 +110,11 @@ cd ~ &&\
 wget https://lastpass.com/download/cdn/lp_no_bin.xpi &&\
 sudo mv lp_no_bin.xpi  ~/.mozilla/extensions/ 
 
+##Install Synergy
+wget http://synergy-project.org/files/packages/synergy-v1.7.4-stable-c734bab-Linux-x86_64.deb -O synergy.deb
+sudo dpkg -i synergy.deb
+sudo apt-get install -f -y
+rm -rf synergy.deb
+
 ##Start the Tweak Tool - Set This Puppy to "2"
 #gnome-tweak-tool &
