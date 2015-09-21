@@ -116,5 +116,13 @@ sudo dpkg -i synergy.deb
 sudo apt-get install -f -y
 rm -rf synergy.deb
 
+##Install Telegram
+wget https://updates.tdesktop.com/tlinux/tsetup.0.8.57.tar.xz -O ~/telegram.xz
+tar xvf tsetup.0.8.57.tar.xz
+sudo mv Telegram/ /opt/
+rm -rf ~/telegram.xz
+export PATH=$PATH:/opt/Telegram
+sudo ln -s /opt/Telegram/Telegram /opt/Telegram/telegram
+
 ##Start the Tweak Tool - Set This Puppy to "2"
 #gnome-tweak-tool &
