@@ -22,6 +22,10 @@ EOF
 ##Update Apt
 sudo apt-get update
 
+##MS Fonts Stuff
+echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+echo ttf-mscorefonts-installer msttcorefonts/present-mscorefonts-eula note | sudo debconf-set-selections
+
 ##Install Opinionated Stuff Here
 sudo apt-get -y --force-yes install mtr clusterhq-flocker-cli indicator-multiload apt-transport-https \
 software-properties-common vim vagrant virtualbox chef puppet ansible tmux mussh multitail mc iptraf netcat links \
