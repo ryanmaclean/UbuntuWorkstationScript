@@ -27,7 +27,7 @@ echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select tr
 echo ttf-mscorefonts-installer msttcorefonts/present-mscorefonts-eula note | sudo debconf-set-selections
 
 ##Install Opinionated Stuff Here
-sudo apt-get -y --force-yes install mtr clusterhq-flocker-cli keepass2 indicator-multiload apt-transport-https \
+sudo apt-get -y --force-yes install mtr clusterhq-flocker-cli dtrx keepass2 indicator-multiload apt-transport-https \
 software-properties-common vim vagrant virtualbox chef puppet ansible tmux mussh multitail mc iptraf netcat links \
 mutt zsh fish jmeter iperf iotop htop traceroute nmap docker.io ruby python python-pip git-core curl zlib1g-dev \
 build-essential libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev \
