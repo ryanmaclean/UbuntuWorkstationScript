@@ -33,7 +33,7 @@ mutt zsh fish jmeter iperf iotop htop traceroute nmap docker.io ruby python pyth
 build-essential libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev \
 python-software-properties libffi-dev git build-essential openssl pkg-config nodejs npm postgresql-common postgresql-9.3 \
 libpq-dev mysql-client libmysqlclient-dev mysql-workbench libsqlite3-dev sqlite3 mongodb-org steam \
-spotify-client software-properties-common sublime-text-installer scudcloud duck hipchat 
+spotify-client software-properties-common sublime-text-installer rbenv scudcloud duck hipchat 
 
 #mysql-server gnome-tweak-tool
 
@@ -57,7 +57,7 @@ sudo pip install awscli
 #rbenv install 2.2.2
 #rbenv global 2.2.2
 #echo "gem: --no-ri --no-rdoc" > ~/.gemrc
-#gem install bundler rails:4.2.1
+#sudo gem install bundler rails:4.2.1
 #rbenv rehash
 
 ##Make it MEAN
